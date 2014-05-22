@@ -1,0 +1,25 @@
+$.ajax({
+		type: 'GET',
+		dataType: "jsonp",
+		url: url,
+		crossDomain: true,
+		success: function (responseData, textStatus, jqXHR) {
+				
+				//charger_pagination(url1,responseData.count,responseData.next,responseData.previous)
+				tableau = '';
+				//alert(responseData.results[1].nom);
+				/*for(i=0;i<responseData.results.length;i++ ){
+					idformation = "details-"+responseData.results[i].id;
+					tableau+='<tr><td><a href="/formation-francophone/'+idformation+'">'+responseData.results[i].nom+'</a></td><td>'+responseData.results[i].pays+'</td>'+'<td>'+responseData.results[i].etablissement.nom+'</td><td>'+responseData.results[i].discipline_1.nom +'</td><td>'+responseData.results[i].niveau_diplome.nom+'</td></tr>';
+				}
+				$('#tableauformation > tbody:last').html(tableau);
+				*/
+				test = "romaric";
+				alert(test);
+				
+		},
+		error: function (responseData, textStatus, errorThrown) {
+				alert('POST failed.'+errorThrown);
+		}
+});
+	

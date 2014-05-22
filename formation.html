@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Document sans titre</title>
+<link rel="stylesheet" type="text/css" href="jquerymobile/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" type="text/css" href="css2/mobilestyle.css">
+<link rel="stylesheet" type="text/css" href="css2/flexslider.css">
+<script src="jquery/jquery-1.8.0.min.js"></script>
+<script src="js/flexslider.js"></script>
+<script src="jquerymobile/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/function.js"></script>
+
+</head>
+
+
+<body>
+<div data-role="page">
+	
+	<div id="apps-header" data-theme="b" data-role="header" data-position="fixed"> <a id="btn-home" data-role="button" data-transition="slideup" href="#index" data-icon="home" data-iconpos="right" class="ui-btn-right"> Accueil </a> <a id="btn-back" data-role="button" data-rel="back" data-transition="slide" href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left"> Retour </a> <h1> FORMATIONS </h1> <div data-role="fieldcontain"> <input name="" id="searchinput1" placeholder="tapez votre recherche ici" value="" type="search"> </div> </div>
+	<div role="main" class="ui-content">
+    	<form method="get" action="resultat_formation.html">
+		<h2>Chercher une formation</h2>
+		<label for="pays" class="select">Pays</label>
+	<select name="pays" id="pays" data-native-menu="false">
+		<option>Pays</option>
+		<option value="35">Cambodge</option>
+		<option value="44">Chine</option>
+		<option value="72">Fidji</option>
+		<option value="103">Inde</option>
+		<option value="112">Japon</option>
+		<option value="120">Laos</option>
+		<option value="141">Mongolie</option>
+		<option value="213">Thaïlande</option>
+		<option value="154">Vanuatu</option>
+		<option value="VNM">Viet Nam</option>
+	</select>
+	<label for="etablissement" class="select">Etablisement</label>
+	<select name="etablissement" id="etablissement" data-native-menu="false">
+		<option>Etablisement</option>
+		<option value="standard">Académie de Sciences et de Technologies du Vietnam</option>
+		<option value="rush">Académie des sciences sociales du Vietnam</option>
+		<option value="express">Académie diplomatique du Vietnam</option>
+		<option value="overnight">Académie nationale de politique et d'administration publique</option>
+		<option value="overnight">Académie Royale du Cambodge</option>
+		<option value="overnight">Centre des sciences humaines</option>
+		<option value="overnight">Centre franco-vietnamien de formation à la gestion</option>
+		<option value="overnight">École nationale supérieure de génies civils de Hanoi </option>
+		<option value="overnight">École normale supérieure de Hanoi</option>
+	</select>
+	<label for="discipline" class="select">Discipline</label>
+	<select name="discipline" id="discipline" data-native-menu="false">
+		<option>Discipline</option>
+		<option value="standard">Santé et sécurité au travail</option>
+		<option value="rush">Protection des personnes et des biens</option>
+		<option value="express">Services de sécurité</option>
+		<option value="overnight">Protection de l'environnement (autres)</option>
+		<option value="overnight">Services sanitaires pour la communauté</option>
+		<option value="overnight">Environnements naturels, faune et flore</option>
+		<option value="overnight">Technologies de protection de l'environnement</option>
+		<option value="overnight">Potection de l'environnement</option>
+		<option value="overnight">Services de transport</option>
+	</select>
+	<label for="niveau" class="select">Niveau</label>
+	<select name="niveau" id="niveau" data-native-menu="false">
+		<option>Niveau</option>
+		<option value="standard">Master</option>
+		<option value="rush">Doctorat</option>
+		<option value="rush">Licence</option>
+		
+	</select>
+	<br><br>
+		<div align="center"><button onclick="envoie_formulaire()" type="submit" id="rechercher_formation" data-theme="l" style="background-color:#7bb43b;color:black;" class="ui-btn ui-btn-inline center">Rechercher</button></div>
+        </form>
+    </div>
+	<br><br>
+	<div data-role="footer">© Copyright 2013 AUF - CUF / Tel : 02585522200</div>
+
+</div>
+</body>
+</html>
