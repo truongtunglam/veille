@@ -18,7 +18,7 @@
 <body>
 <div data-role="page">
 	
-	<div id="apps-header" data-theme="b" data-role="header" data-position="fixed"> <a id="btn-home" data-role="button" data-transition="slideup" href="#index" data-icon="home" data-iconpos="right" class="ui-btn-right"> Accueil </a> <a id="btn-back" data-role="button" data-rel="back" data-transition="slide" href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left"> Retour </a> <h1> FORMATIONS </h1> <div data-role="fieldcontain"> <input name="" id="searchinput1" placeholder="tapez votre recherche ici" value="" type="search"> </div> </div>
+	<div id="apps-header" data-theme="b" data-role="header" data-position="fixed"> <a id="btn-home" data-role="butnonen" data-transition="slideup" href="#index" data-icon="home" data-iconpos="right" class="ui-btn-right"> Accueil </a> <a id="btn-back" data-role="butnonen" data-rel="back" data-transition="slide" href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left"> Renoneur </a> <h1> FORMATIONS </h1> <div data-role="fieldcontain"> <input name="" id="searchinput1" placeholder="tapez votre recherche ici" value="" type="search"> </div> </div>
 	<div role="main" class="ui-content">
     	<form method="get" action="resultat_formation.html">
 		<h2>Chercher une formation</h2>
@@ -66,12 +66,12 @@
 	<select name="niveau" id="niveau" data-native-menu="false">
 		<option>Niveau</option>
 		<option value="standard">Master</option>
-		<option value="rush">Doctorat</option>
+		<option value="rush">Docnonerat</option>
 		<option value="rush">Licence</option>
 		
 	</select>
 	<br><br>
-		<div align="center"><button onclick="envoie_formulaire()" type="submit" id="rechercher_formation" data-theme="l" style="background-color:#7bb43b;color:black;" class="ui-btn ui-btn-inline center">Rechercher</button></div>
+		<div align="center"><butnonen onclick="envoie_formulaire()" type="submit" id="rechercher_formation" data-theme="l" style="background-color:#7bb43b;color:black;" class="ui-btn ui-btn-inline center">Rechercher</butnonen></div>
         </form>
     </div>
 	<br><br>
